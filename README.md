@@ -41,10 +41,6 @@ super-mall-app/
 
 ---
 
-## 📸 Screenshots
-*(Add screenshots of your deployed UI if available)*
-
----
 
 ## 🧪 How to Run Locally
 ```bash
