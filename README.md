@@ -134,12 +134,7 @@ offers/
 
 ---
 
-## 🧾 Submission Info
-- 🔗 GitHub Repo: *(you'll update with actual link)*
-- 📄 Project Report: Attached as PDF
-- 📌 Deployment: Firebase Hosting
-- 🧱 System Design: Above included
-- 🧪 Test Cases: Manually tested UI + functionality
+
 
 ---
 
