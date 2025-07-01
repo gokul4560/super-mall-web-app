@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Mall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Super Mall Web App</h1>
+
+  <!-- 🔐 Login/Signup Section -->
+  <div id="login">
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <br><br>
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="login()">Login</button>
+    <button onclick="googleLogin()">Login with Google</button>
+  </div>
+
+  <!-- ✅ Content Section After Login -->
+  <div id="content" style="display:none;">
+    <h2>Welcome to Super Mall</h2>
+    <button onclick="addShop()">Add Shop</button>
+    <button onclick="addOffer()">Add Offer</button>
+    <button onclick="listShops()">List Shops</button>
+    <button onclick="filterByCategory()">Filter by Category</button>
+    <button onclick="logout()">Logout</button>
+    <button onclick="listOffers()">List Offers</button>
+    <button onclick="filterByFloor()">Filter by Floor</button
+    
+
+
+    <div id="shopList"></div>
+  </div>
+
+  <!-- 🔗 Firebase Libraries -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAxp8lMlRlO2SHZ7AQHJSiLfyqKZgFJiWI",
+      authDomain: "super-mall-web-applicati-71ea0.firebaseapp.com",
+      projectId: "super-mall-web-applicati-71ea0",
+      storageBucket: "super-mall-web-applicati-71ea0.firebasestorage.app",
+      messagingSenderId: "381883717650",
+      appId: "1:381883717650:web:3fccdf7e3345be51faa0cb",
+      measurementId: "G-NGJV0XJLVR"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
